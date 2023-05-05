@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from apps.products.models import Product, ProductCategory
 
 
 def index(request):
@@ -16,6 +17,8 @@ def index(request):
 def products(request):
     context = {
         "title": "Store - каталог",
+        "products": Product.objects.all(),
+        "categories": ProductCategory.objects.all(),
     }
     return render(
         request=request,
