@@ -1,0 +1,27 @@
+# [code_style]-[BEGIN]
+# Pre-commit hook.
+pre-commit==3.0.4
+# Upgrade syntax.
+pyupgrade==3.3.1
+# Formatter. Apply codestyle.
+black==23.1.0
+# Check codestyle.
+flake8==6.0.0
+# Removes unused imports and unused variables.
+autoflake==2.0.1
+# [code_style]-[END]
+
+# Core.
+django==4.1.7
+
+# For PostgreSQL.
+psycopg2-binary==2.9.5
+
+# for bootstrap5
+crispy-bootstrap5==0.7
+
+# For environment variables and configuration.
+django-environ==0.9.0
+
+# For images
+Pillow==9.4.0
