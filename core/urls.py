@@ -23,6 +23,7 @@ from apps.products.views import index
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("products/", include("apps.products.urls")),
+    path("users/", include("apps.users.urls")),
     path("", index, name="index"),
 ]
 
